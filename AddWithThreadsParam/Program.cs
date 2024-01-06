@@ -1,7 +1,5 @@
 ﻿using AddWithThreadsParam;
-/// <summary>
-/// Nums will be printed in queue in this case
-/// </summary>
+
 internal class Program
 {
     private static void Main(string[] args)
