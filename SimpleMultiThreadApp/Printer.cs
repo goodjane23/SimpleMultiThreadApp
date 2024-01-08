@@ -13,7 +13,7 @@ public class Printer
         Console.WriteLine("Your nums:");
         for (int i = 0; i < 10; i++)
         {
-            Console.WriteLine($"{i} ,");
+            Console.WriteLine($"{i},");
             Thread.Sleep(2000);
         }
         Console.WriteLine();

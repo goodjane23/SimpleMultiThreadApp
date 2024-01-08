@@ -6,7 +6,7 @@ internal class Program
     {
         Console.WriteLine("**** Amazing Thread app ****");
         Console.WriteLine("Do you wanna [1] or [2] threads?");
-        string threadcount = Console.ReadLine();
+        var threadcount = Console.ReadLine();
 
         Thread primaryThread = Thread.CurrentThread;
         primaryThread.Name = "First";
@@ -18,7 +18,7 @@ internal class Program
         switch (threadcount)
         {
             case "2":
-                var backgroundThread = new Thread(new ThreadStart(p.PrintNumbers));
+                var backgroundThread = new Thread(p.PrintNumbers);
                 backgroundThread.IsBackground = true;
                 backgroundThread.Name = "Secondary";
                 backgroundThread.Start();
@@ -30,6 +30,7 @@ internal class Program
                 Console.WriteLine("Fuckoff");
                 break;
         }
+        Console.WriteLine("gfgfgfh");
         Console.ReadLine();
 
     }
